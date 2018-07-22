@@ -1,0 +1,266 @@
+/*///////////////////navigation effect////////////////////*/
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+:after {
+	content: "";
+}
+/*////////////////////////////////////////////////////////////*/
+body { 
+	background: #565656;
+}
+
+
+
+.nav-container {
+    width: 105px;
+    height: 100%;
+    position: fixed;
+    background-color: #76323F;
+    margin-left: -5px;
+    margin-top: 1px;
+   
+}
+.nav-container .navigation-bar{
+    
+}
+.navigation-bar{
+  float: left;
+	position: relative;
+	top: 0;
+  left: 0;
+	background: transparent;
+}
+
+.container-table{
+  
+    width: 200px;
+  
+}
+
+nav ul {
+	text-align: center;
+    margin-left: -25px;
+   
+}
+
+nav ul li {
+	position: relative;
+    width: 80px;
+    height: 100px;
+    cursor: pointer;
+	background: #76323F;
+	text-transform: uppercase;
+    list-style-type: none;
+	transition:all .4s ease-out;
+}
+
+nav ul li:after {
+	position: absolute;
+	background: #C09F80;
+	color: #76323F;
+	top:0;
+	left: 70px;
+	width: 90px; height: 100%;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+nav ul li:after. {
+	position: absolute;
+	background: #C09F80;
+	color: #76323F;
+	top:0;
+	left: 70px;
+	width: 90px; height: 100%;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+
+nav ul li:nth-child(1):after { 
+	content: "Home";
+    font-size: 15px;
+	line-height: 88px;
+}
+nav ul li:nth-child(3):after { 
+	content: "Manage";
+     font-size: 15px;
+	line-height: 88px;
+}
+nav ul li:nth-child(5):after { 
+	content: "Logout";
+     font-size: 15px;
+	line-height: 85px;
+}
+
+
+
+
+
+nav ul li:hover {
+	transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+nav ul li > div {
+	display: inline-block;
+	padding: 25px 0;
+	background: transparent;
+}
+
+nav ul li div { 
+    position: relative; 
+}
+
+.roof {
+	width: 0;
+	height: 0;
+	top:2px;
+	border-style: solid ;
+	border-width: 0 21px 15px 21px;
+	border-color: transparent transparent #C09F80 transparent;
+}
+
+.roof-edge {
+	position: absolute;
+	z-index: 20;
+	left: -17px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 17px 12px 17px;
+	border-color: transparent transparent #76323F transparent;
+}
+
+.roof-edge:after {
+	position: absolute;
+	left: -14.5px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 14.5px 10px 14.5px;
+	border-color: transparent transparent #C09F80 transparent;
+}
+
+.front {
+	position: relative;
+	top: 3px;
+	width: 28.5px;
+	height: 20px;
+	margin: 0 auto;
+	background: #C09F80;
+}
+/*door*/
+.front:after {
+	position: absolute;
+	background: #76323F;
+	width: 11px;
+	height: 13px;
+	bottom: 0;
+	left:9px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+.Text-manage{
+    margin-top:-2%; 
+    margin-left:0%;
+}
+.filter{
+    background: #76323F;
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+}
+.Text-filter{
+    margin-bottom: -3%;
+    margin-left: 42%;
+}
+.filter-input{
+     width: 100%;
+    height:70px;
+    padding-top: 55px;
+  
+}
+.main-input{
+    padding-left: 6%;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+.modal-container{
+    display: none;
+    position: fixed;
+  z-index: 1;
+  width:700px;
+  height: 500px;
+  background-color: ;
+    margin-left:25%;
+    margin-top: -15%;
+}
+
+.modal-content{
+    width: 100%;
+    height: 550px;
+    padding: 60px;
+    background-color: white;
+}
+.modal-input{
+    width: 100%;
+    height:70px;
+    padding-top: 50px;
+    margin-left: 50px;
+   
+}
+
+.modal-input label{
+    width:200px;
+}
+
+.modal-bt-save{
+    width: 50%;
+    margin-left:230px;
+    margin-top: 100px;
+    
+    
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.box-edit{
+    width:50%;
+    height: 102%;
+    background-color: #eee;
+    margin-left: 22%;
+    margin-top: -1%;
+   
+    padding-top: 6%;
+}
+
+.box-edit-1{
+    height: 87%;
+    background-color: #76323F;
+    padding-top: 66%;
+}
+
+.edit-input{
+    width: 100%;
+    height:115px;
+    padding-top: 100px;
+    
+   
+}
+.save-edit{
+    margin-top: 1%;
+}
